@@ -1,0 +1,35 @@
+workflow:
+  name: "Website CI Workflow"
+  version: 1.0
+  enabled: true
+
+
+  trigger:
+    events:
+      - push
+      - pull_request
+    branches:
+      - main
+      - develop
+
+  jobs:
+    build:
+      name: "Build Project"
+      steps:
+        - name: "Install dependencies"
+          action: "npm install"
+
+        - name: "Build application"
+          action: "npm run build"
+
+    test:
+      name: "Test Project"
+      steps:
+        - name: "Run tests"
+          action: "npm test"
+
+
+  description: |-
+    This workflow automates the build and testing process.
+    It runs when changes are pushed to the repository.
+    It checks the project before deployment.

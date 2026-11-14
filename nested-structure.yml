@@ -1,0 +1,20 @@
+project:
+  name: "My YAML Project"
+  version: 2.0
+
+  
+  settings:
+    debug: true
+    language: "Russian"
+    special_text: "@admin: *important"
+
+
+message: 'It''s my second YAML task'
+
+
+technologies:
+  - HTML
+  - CSS
+  - JavaScript
+
+colors: [red, green, blue]

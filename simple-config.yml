@@ -1,0 +1,16 @@
+project_name: "My First Project"
+version: 1.0
+author: "Student"
+
+
+debug: true
+production: false
+
+
+description: null
+
+
+technologies:
+  - HTML
+  - CSS
+  - JavaScript
